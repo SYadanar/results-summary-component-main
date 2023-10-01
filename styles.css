@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+:root {
+    --p-light-red: hsl(0, 100%, 67%);
+    --p-org-yellow: hsl(39, 100%, 56%);
+    --p-green-teal: hsl(166, 100%, 37%);
+    --p-cobalt-blue: hsl(234, 85%, 45%);
+
+    --light-slate-blue-bg: hsl(252, 100%, 67%);
+    --light-royal-blue-bg: hsl(241, 81%, 54%);
+    --violet-blue: hsla(256, 72%, 46%, 1);
+    --persian-blue: hsla(241, 72%, 46%, 0);
+
+    --white: hsl(0, 0%, 100%);
+    --pale-blue: hsl(221, 100%, 96%);
+    --light-lavender: hsl(241, 100%, 89%);
+    --dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid red; */
+}
+
+body {
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    width: 100%;
+    height: 100vh;
+
+    background-color: var(--white);
+    color: var(--dark-gray-blue)
+}
+
+.fw-bold {
+    font-weight: 700;
+}
+
+.fw-bolder {
+    font-weight: 800;
+}
+
+.result-card {
+    width: 45%;
+    border-radius: 30px;
+    box-shadow: 10px 10px 15px 5px var(--pale-blue);
+}
+
+#result-div {
+    background-image: linear-gradient(var(--light-slate-blue-bg), var(--light-royal-blue-bg));
+    color: var(--white);
+    border-radius: inherit;
+}
+
+.title {
+    font-size: 1.25rem;
+}
+
+#result-circle {
+    background-image: linear-gradient(var(--violet-blue), var(--persian-blue));
+}
+
+#result-div span,
+#result-div p {
+    color: var(--light-lavender)
+}
+
+.score-container {
+    padding-top: 12px;
+    padding-bottom: 30px;
+}
+
+.score-item {
+    background-color: hsla(0, 100%, 67%, 0.15);
+    color: var(--p-light-red);
+    border-radius: 8px;
+    padding: 13px 16px;
+}
+
+.btn {
+    border-radius: 50px;
+    color: var(--pale-blue)
+}
+
+.btn-dark {
+    background-color: var(--dark-gray-blue);
+}
+
+
+
+/* -------------------------------------- */
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}

@@ -1,47 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | Results summary component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body>
 
-  Your Result
-  76
-  of 100
-
-  Great
-  You scored higher than 65% of the people who have taken these tests.
-  
-  Summary
-
-  Reaction
-  80 / 100
-
-  Memory
-  92 / 100
-
-  Verbal
-  61 / 100
-
-  Visual
-  72 / 100
-
-  Continue
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+<body class="d-flex justify-content-center align-items-center">
+  <main class="container-fluid">
+    <div class="result-card m-auto row">
+      <div id="result-div" class="col-6 py-4 px-5 text-center">
+        <div>
+          <span class="title fw-bold">Your Result</span>
+        </div>
+        <div id="result-circle" class="mx-4 my-4 rounded-circle">
+          <div class="ratio ratio-1x1">
+            <div class="d-flex flex-column justify-content-center align-items-center">
+              <h1 class="display-4 fw-bolder mb-0">76</h1>
+              <span>of 100</span>
+            </div>
+          </div>
+        </div>
+        <div class="remark mb-3">
+          <h3 class="fw-bold">Great</h3>
+        </div>
+        <div class="mb-3">
+          <p>You scored higher than 65% of the people who have taken these tests.</p>
+        </div>
+      </div>
+      <div class="col-6 p-4 d-flex flex-column justify-content-between">
+        <div class="">
+          <span class="title fw-bold">Summary</span>
+        </div>
+        <div class="score-container d-flex flex-column justify-content-around" style="height: 100%;">
+          <div class="score-item d-flex justify-content-between align-items-center fw-bold">
+            <div class="d-flex">
+              <img src="" alt="" srcset="assets/images/icon-reaction.svg">
+              <span class="px-2">Reaction</span>
+            </div>
+            <div>80 / 100</div>
+          </div>
+          <div class="score-item d-flex justify-content-between align-items-center fw-bold">
+            <div class="d-flex">
+              <img src="" alt="" srcset="assets/images/icon-reaction.svg">
+              <span class="px-2">Reaction</span>
+            </div>
+            <div>80 / 100</div>
+          </div>
+          <div class="score-item d-flex justify-content-between align-items-center fw-bold">
+            <div class="d-flex">
+              <img src="" alt="" srcset="assets/images/icon-reaction.svg">
+              <span class="px-2">Reaction</span>
+            </div>
+            <div>80 / 100</div>
+          </div>
+          <div class="score-item d-flex justify-content-between align-items-center fw-bold">
+            <div class="d-flex">
+              <img src="" alt="" srcset="assets/images/icon-reaction.svg">
+              <span class="px-2">Reaction</span>
+            </div>
+            <div>80 / 100</div>
+          </div>
+        </div>
+        <button type="button" class="btn btn-lg btn-dark mb-3">
+          Continue
+        </button>
+      </div>
+    </div>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+  <script src="script.js"></script>
 </body>
+
 </html>
