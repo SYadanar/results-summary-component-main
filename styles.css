@@ -178,7 +178,7 @@ body {
     }
 
     .result-card {
-        border-radius: 0px 0px 25px 25px;
+        border-radius: 0;
     }
 
     .display-4 {
@@ -187,5 +187,9 @@ body {
 
     #result-circle {
         margin: 1.2rem 20%;
+    }
+
+    .attribution {
+        background-color: white;
     }
 }
