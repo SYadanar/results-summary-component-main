@@ -78,10 +78,30 @@ body {
 }
 
 .score-item {
-    background-color: hsla(0, 100%, 67%, 0.15);
-    color: var(--p-light-red);
+    background-color: var(--bg);
+    color: var(--fc);
     border-radius: 8px;
     padding: 13px 16px;
+}
+
+.score-item.color-red {
+    --bg: hsla(0, 100%, 67%, 0.15);
+    --fc: var(--p-light-red)
+}
+
+.score-item.color-yellow {
+    --bg: hsla(39, 100%, 56%, 0.15);
+    --fc: var(--p-org-yellow);
+}
+
+.score-item.color-green {
+    --bg: hsla(166, 100%, 37%, 0.15);
+    --fc: var(--p-green-teal);
+}
+
+.score-item.color-blue {
+    --bg: hsla(234, 85%, 45%, 0.15);
+    --fc: var(--p-cobalt-blue);
 }
 
 .res-mark {
