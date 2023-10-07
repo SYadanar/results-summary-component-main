@@ -32,7 +32,9 @@ body {
     height: 100vh;
 
     background-color: var(--white);
-    color: var(--dark-gray-blue)
+    color: var(--dark-gray-blue);
+
+    align-items: center;
 }
 
 .fw-bold {
@@ -60,6 +62,7 @@ body {
 }
 
 #result-circle {
+    margin: 1rem 10%;
     background-image: linear-gradient(var(--violet-blue), var(--persian-blue));
 }
 
@@ -69,6 +72,7 @@ body {
 }
 
 .score-container {
+    height: 100%;
     padding-top: 12px;
     padding-bottom: 30px;
 }
@@ -80,16 +84,22 @@ body {
     padding: 13px 16px;
 }
 
+.res-mark {
+    color: var(--dark-gray-blue);
+}
+
 .btn {
     border-radius: 50px;
-    color: var(--pale-blue)
+    color: var(--pale-blue);
 }
 
 .btn-dark {
     background-color: var(--dark-gray-blue);
 }
 
-
+.btn-dark:hover {
+    background-image: linear-gradient(var(--light-slate-blue-bg), var(--light-royal-blue-bg));
+}
 
 /* -------------------------------------- */
 
@@ -100,4 +110,62 @@ body {
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+/* -------------------------------------- */
+
+/* medium screens (e.g., tablets in portrait orientation) */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .result-card {
+        width: 80%;
+    }
+}
+
+/* small screens (e.g., mobile phones) */
+@media screen and (max-width: 767px) {
+    body {
+        align-items: normal;
+        font-size: 16px;
+    }
+
+    .result-card {
+        width: 100%;
+    }
+
+    .display-4 {
+        font-size: calc(3.5rem + 2.7vw);
+    }
+
+    #result-circle {
+        margin: 1rem 30%;
+    }
+
+    .score-container {
+        padding-top: 12px;
+        padding-bottom: 16px;
+    }
+
+    .score-item {
+        margin: 0.5rem 0;
+        padding: 16px 16px;
+    }
+}
+
+/* extra small screens */
+@media screen and (max-width: 575px) {
+    .container-fluid {
+        padding: 0;
+    }
+
+    .result-card {
+        border-radius: 0px 0px 25px 25px;
+    }
+
+    .display-4 {
+        font-size: calc(3rem + 2.7vw);
+    }
+
+    #result-circle {
+        margin: 1.2rem 20%;
+    }
 }
