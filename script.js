@@ -8,9 +8,9 @@ fetch('data.json')
             data = json[i]
             scoreItem = document.createElement('div');
             scoreItem.innerHTML = `
-            <div id="" class="score-item ${data['color']} d-flex justify-content-between align-items-center fw-bold">
+            <div class="score-item ${data['color']} d-flex justify-content-between align-items-center fw-bold">
                 <div class="d-flex">
-                    <img src="" alt="" srcset="${data['icon']}">
+                    <img alt="${data['category']} Icon" srcset="${data['icon']}">
                     <span class="px-2">${data['category']}</span>
                 </div>
                 <div>

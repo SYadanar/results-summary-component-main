@@ -71,6 +71,10 @@ body {
     color: var(--light-lavender)
 }
 
+.remark h2 {
+    font-size: 1.75rem;
+}
+
 .score-container {
     height: 100%;
     padding-top: 12px;
