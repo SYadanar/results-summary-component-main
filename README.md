@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Click Me!](https://github.com/SYadanar/results-summary-component-main)
+- Solution URL: [Click Me!](https://www.frontendmentor.io/solutions/responsive-result-summary-component-with-dynamic-data-using-bootstrap-wMGpPUEyjx)
 - Live Site URL: [Click Me!](https://results-summary-component-main-neon.vercel.app/)
 
 ## My process

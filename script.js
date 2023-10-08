@@ -10,7 +10,7 @@ fetch('data.json')
             scoreItem.innerHTML = `
             <div class="score-item ${data['color']} d-flex justify-content-between align-items-center fw-bold">
                 <div class="d-flex">
-                    <img alt="${data['category']} Icon" srcset="${data['icon']}">
+                    <img scr="" alt="${data['category']} Icon" srcset="${data['icon']}">
                     <span class="px-2">${data['category']}</span>
                 </div>
                 <div>
